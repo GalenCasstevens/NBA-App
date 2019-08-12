@@ -1,0 +1,57 @@
+@font-face {
+    font-family: nbaFont;
+    src: url('../fonts/NCAA Purdue Boilermakers.otf');
+}
+
+body {
+    background: #17408B;
+}
+
+nav {
+    color: #000
+}
+
+a.navbar-dark {
+    color: #000;
+}
+
+a.navbar-brand:first-child {
+    font-family: nbaFont;
+    font-size: 2em;
+    font-weight: bold;
+    color: #C9082A;
+}
+
+ .navbar-light .navbar-nav .nav-link{
+    font-family: nbaFont;
+    font-size: 1.5em;
+    color: #C9082A
+}
+
+.content {
+    padding-top: 50px;
+}
+
+.standings {
+    padding-left: 175px;
+}
+
+.list-group-item {
+    border-color: #000;
+}
+
+.teamListImg {
+    width: 100px;
+    border-radius: 20px;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.testing {
+    background: #FFF;
+    padding: .75rem;
+    margin-bottom: 0px;
+    border-bottom: #000 .05rem solid;
+}
