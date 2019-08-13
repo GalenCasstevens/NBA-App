@@ -60,17 +60,33 @@ a.navbar-brand:first-child {
     width: 100px;
     border-radius: 20px;
 }
+.table {
+    background-color: #f3f4f5; 
+}
 
 .table thead {
     border-top: 2px solid #9b9b9b;
+}
+
+.table thead tr th {
+    border-bottom: 1px solid #e6e8ea;
 }
 
 .table tbody {
     border-bottom: 2px solid #9b9b9b;
 }
 
+.table th.teamName {
+    border-right: 1px solid #e6e8ea;
+    font-weight: 625;
+}
+
 .table td {
     vertical-align: middle;
+}
+
+.table tr:nth-child(odd) {
+    background-color: #FFF;
 }
 
 .pageTitle {
@@ -107,4 +123,9 @@ a.navbar-brand:first-child {
     color: #4169e1;
     height: 25px;
     vertical-align: middle;
+}
+
+#cornerCell {
+    border-right: 1px solid #e6e8ea;
+    border-bottom: 1px solid #e6e8ea;
 }
