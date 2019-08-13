@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/all.min.css">
-    
+
 </head>
 
 <body>
@@ -36,7 +36,7 @@
                         <a class="nav-link" href="#">Games</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Standings</a>
+                        <a class="nav-link" href="#"><span class="activeText">Standings</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Statistics</a>
@@ -46,24 +46,35 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="pageContent container">
         <div class="content">
-            <h1 class="testing">2018-19 NBA Standings</h1>
+            <h1 class="pageTitle">2018-19 NBA Standings</h1>
+
+            <div id="conferenceDivisionSwitch" class="justify-content-md-center col-12 btn-group btn-group-toggle" data-toggle="buttons">
+                <label id="conferenceButton" class="col-2 btn btn-light active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> <span id="conferenceButtonText">Conference</span>
+                </label>
+                <label id="divisionButton" class="col-2 btn btn-secondary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> <span id="conferenceButtonText">Division</span>
+                </label>
+            </div>
+
+            <h2 class="conferenceTableTitle">Eastern Conference</h2>
 
             <table class="table table-light">
                 <thead>
                     <tr>
                         <th scope="col"></th>
-                        <th scope="col"><span class="gridCellContent">W</span></th>
-                        <th scope="col"><span>L</span></th>
-                        <th scope="col"><span>WIN%</span></th>
-                        <th scope="col"><span>GB</span></th>
-                        <th scope="col">CONF</th>
-                        <th scope="col">DIV</th>
-                        <th scope="col">HOME</th>
-                        <th scope="col">ROAD</th>
-                        <th scope="col">L10</th>
-                        <th scope="col">STRK</th>
+                        <th scope="col"><span>W <span id="gc"><i class="fas fa-sort-down"></i></span></span></th>
+                        <th scope="col"><span>L <i class="fas fa-sort-down"></i></span></th>
+                        <th scope="col"><span>WIN% <i class="fas fa-sort-down"></i></span></th>
+                        <th scope="col"><span>GB <i class="fas fa-sort-down"></i></span></th>
+                        <th scope="col"><span>CONF <i class="fas fa-sort-down"></i></span></th>
+                        <th scope="col"><span>DIV <i class="fas fa-sort-down"></i></span></th>
+                        <th scope="col"><span>HOME <i class="fas fa-sort-down"></i></span></th>
+                        <th scope="col"><span>ROAD <i class="fas fa-sort-down"></i></span></th>
+                        <th scope="col"><span>L10 <i class="fas fa-sort-down"></i></span></th>
+                        <th scope="col"><span>STRK <i class="fas fa-sort-down"></i></span></th>
                     </tr>
                 </thead>
                 <tbody>
