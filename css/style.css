@@ -94,12 +94,14 @@ a.navbar-brand:first-child {
 }
 
 .teamHeader {
-    background: linear-gradient(#E03A3E, #C1D32F);
+    background: linear-gradient(#E03A3E, #0B153C);
 }
 
-.teamStatistics {
+.teamStatisticsContainer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #0B153C;
     border-top: 2px solid #66737C;
-    background-color: #C1D32F;
     color: #FFF;
     font-weight: bold;
 }
@@ -195,6 +197,20 @@ a.navbar-brand:first-child {
     font-size: 3em;
 }
 
+.streakContainer {
+    line-height: 1.3em;
+}
+
+.streak {
+    font-weight: bold;
+    font-size: .75em;
+}
+
+.streakData {
+    font-weight: bold;
+    font-size: 1.75em;
+}
+
 .teamInfoName {
     vertical-align: middle;
     padding-left: 100px;
@@ -217,11 +233,101 @@ a.navbar-brand:first-child {
     margin-bottom: 10px;
 }
 
-.statisticsCol, .statisticsCol2, .statisticsCol3, .statisticsCol4 {
+.statisticsCol1, .statisticsCol2, .statisticsCol3, .statisticsCol4, .statisticsCol7, .statisticsCol8, .statisticsCol9 {
     text-align: center;
     border-right: 1px solid #66737C;
 }
 
+.statisticsCol5, .statisticsCol10 {
+    text-align: center;
+}
+
+.statisticsCol10 {
+    display: table-cell;
+}
+
+.ppg, .oppg, .rpg, .apg {
+    font-size: .75em;
+}
+
 .ppgData, .oppgData, .rpgData, .apgData {
     display: block;
+    font-size: .75em;
+}
+
+.homeRoadLast10 {
+    font-size: .72em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100px;
+}
+
+.homeRoadLast10 li {
+    border-left: 1px solid #66737C;
+    border-right: 1px solid #66737C;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.homeData, .roadData, .last10Data {
+    float: right;
+}
+
+.statisticsCol6 {
+    padding: 0;
+}
+
+.homeItem, .roadItem {
+    border-bottom: 1px solid #66737C;
+}
+
+.wins, .losses {
+    background-color: #FFF;
+    color: #000;
+    text-align: center;
+    padding: 2px;
+    font-weight: bold;
+    height: 22.5px;
+    width: 22.5px;
+    display: inline-block;
+}
+
+.winCount, .lossCount {
+    font-size: 1.35em;
+    font-weight: bold;
+}
+
+.conference, .division {
+    text-align: center;
+    line-height: 1em;
+}
+
+.conferenceDivision {
+    display: inline-block;
+    font-size: .65em;
+    color: #B3C1CA;
+}
+
+.eastSoutheast {
+    display: inline-block;
+    font-size: .8em;
+}
+
+.record {
+    display: inline-block;
+    font-size: .8em;
+}
+
+.gamesBack {
+    display: inline-block;
+    color: #B3C1CA;
+    font-size: .65em;
+}
+
+.teamWebsite {
+    font-size: .75em;
+    vertical-align: middle;
+    display: inline-block;
+    padding-top: 20px;
 }
