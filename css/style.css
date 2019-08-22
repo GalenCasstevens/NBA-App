@@ -48,18 +48,12 @@ a.navbar-brand:first-child {
     color: #FFF;
 }
 
-.content {
+.pageHeader {
     padding-top: 50px;
 }
 
 .standings {
     padding-left: 175px;
-}
-
-.list-group {
-    max-height: 750px;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
 }
 
 .list-group-item {
@@ -176,8 +170,14 @@ a.navbar-brand:first-child {
     border-bottom: 1px solid #e6e8ea;
 }
 
-.teamList {
+.teamListContainer {
     padding-right: 0;
+}
+
+.teamList {
+    max-height: 750px;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .teamInformation {
@@ -330,4 +330,57 @@ a.navbar-brand:first-child {
     vertical-align: middle;
     display: inline-block;
     padding-top: 20px;
+}
+
+.playersTableContainer {
+   display: block;
+   position: relative;
+    height: 488px; 
+    overflow: auto;
+}
+
+.playersTable {
+    margin-top: 10px;
+}
+
+.playersTable thead, .playersTable tbody, .playersTable tr, .playersTable, .playersTable th, .playersTable td {
+    border: none;
+}
+
+.playersTable td {
+    text-align: center;
+}
+
+.portrait {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.playerNameContainer {
+    margin-top: 5px;
+    line-height: 1.2em;
+    color: #1779ba;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 550;
+    font-size: 1.1em;
+}
+
+.playerPosition {
+    font-size: .95em;
+    font-weight: 490;
+}
+
+.playerHeightWeightContainer {
+    line-height: 1em;
+    font-size: .9em;
+}
+
+.teamNumber {
+    margin-top: 2px; 
+    display: inline-block;
+    font-weight: bolder;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
 }
